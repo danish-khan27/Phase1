@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Each movie card - BIGGER */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;        /* Slightly more padding */
+    border: 1px solid #ddd;
+    width: 300px;          /* Make the cards wider */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Poster image inside each gallery card - TALLER */
+.gallery img {
+    width: 100%;
+    height: 400px;         /* Increase height of images */
+    object-fit: cover;     /* Ensures image fits, crops if necessary */
+    border-bottom: 1px solid #ccc;
+}
+
+/* Title & description styling - Slightly larger text */
+.gallery h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+.gallery p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Optional: Makes the card "pop" on hover */
+.gallery:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Like/Dislike Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.buttons button {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buttons p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
